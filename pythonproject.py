@@ -19,7 +19,7 @@ f2.pack(side=RIGHT)
 #------------------TIME--------------
 localtime=time.asctime(time.localtime(time.time()))
 #-----------------INFO TOP------------
-lblinfo = Label(Tops, font=( 'aria' ,30, 'bold' ),text="NMIMS Restauraunt",fg="Black",bd=10,anchor='w')
+lblinfo = Label(Tops, font=( 'aria' ,30, 'bold' ),text="My Restauraunt",fg="Black",bd=10,anchor='w')
 lblinfo.grid(row=0,column=0)
 lblinfo = Label(Tops, font=( 'aria' ,20, ),text=localtime,fg="steel blue",anchor=W)
 lblinfo.grid(row=1,column=0)
@@ -51,7 +51,7 @@ def Ref():
     Service="Rs.",str('%.2f'% Ser_Charge)
     PaidTax="Rs.",str('%.2f'% PayTax)
     OverAllCost1 = 0
-    if couponcode.get() !="nmims10":
+    if couponcode.get() !="offer10":
         OverAllCost1 ="Rs.",str( PayTax + Totalcost + Ser_Charge)
         OverAllCost="Rs.",str( PayTax + Totalcost + Ser_Charge)
     else:
